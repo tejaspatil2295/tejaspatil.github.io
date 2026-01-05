@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-             <title>Portfolio | Software Developer</title>
+    <title>Portfolio | Software Developer</title>
     <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -11,22 +12,30 @@
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <script src="https://unpkg.com/feather-icons"></script>
     <style>
-        .profile-pic {
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-            border: 4px solid white;
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-        }
+       .profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top; /* adjust if head is getting cut */
+    border: 4px solid white;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+
         .skill-badge {
             transition: all 0.3s ease;
         }
+
         .skill-badge:hover {
             transform: translateY(-3px);
         }
+
         .nav-link {
             position: relative;
         }
+
         .nav-link::after {
             content: '';
             position: absolute;
@@ -37,9 +46,11 @@
             background-color: #3b82f6;
             transition: width 0.3s ease;
         }
+
         .nav-link:hover::after {
             width: 100%;
         }
+
         @media (max-width: 768px) {
             .profile-pic {
                 width: 150px;
@@ -48,6 +59,7 @@
         }
     </style>
 </head>
+
 <body class="bg-gray-50 text-gray-800 font-sans">
     <!-- Navigation -->
     <nav class="bg-white shadow-sm sticky top-0 z-50">
@@ -85,15 +97,23 @@
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col md:flex-row items-center justify-between">
                 <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
-                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Hi, I'm <span class="text-blue-600">Tejas</span></h1>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">Hi, I'm <span
+                            class="text-blue-600">Tejas</span></h1>
                     <h2 class="text-2xl md:text-3xl font-semibold text-gray-600 mb-6">Software Developer</h2>
                     <p class="text-lg text-gray-600 mb-8">
-Software Developer with hands-on experience building <strong>full-stack web applications, REST APIs, and high-availability communication platforms</strong>. 
-Currently working at MDS Digital Media on <strong>SMPP 2.0, Omnichannel messaging systems, and Angular-based applications</strong>, with a strong focus on performance, scalability, and clean UI.
-</p>
+                        Software Developer with hands-on experience building <strong>full-stack web applications, REST
+                            APIs, and high-availability communication platforms</strong>.
+                        Currently working at MDS Digital Media on <strong>SMPP 2.0, Omnichannel messaging systems, and
+                            Angular-based applications</strong>, with a strong focus on performance, scalability, and
+                        clean UI.
+                    </p>
                     <div class="flex space-x-4">
-                        <a href="#contact" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 shadow-md">Contact Me</a>
-                        <a href="#about" class="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition duration-300">Learn More</a>
+                        <a href="#contact"
+                            class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 shadow-md">Contact
+                            Me</a>
+                        <a href="#about"
+                            class="px-6 py-3 border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition duration-300">Learn
+                            More</a>
                     </div>
                 </div>
                 <div class="md:w-1/3" data-aos="fade-left">
@@ -118,13 +138,16 @@ Currently working at MDS Digital Media on <strong>SMPP 2.0, Omnichannel messagin
                 </div>
                 <div class="md:w-2/3 md:pl-12" data-aos="fade-left">
                     <p class="text-lg text-gray-600 mb-6">
-                        I'm a Computer Engineering graduate with experience in software development. Currently working at MDS Digital Media, I specialize in building web applications using modern technologies.
+                        I'm a Computer Engineering graduate with experience in software development. Currently working
+                        at MDS Digital Media, I specialize in building web applications using modern technologies.
                     </p>
                     <p class="text-lg text-gray-600 mb-6">
-                        After my initial experience at XYZ Organization, I took a career break for UPSC preparation. Now I'm back in the private sector, eager to contribute my skills and grow professionally.
+                        After my initial experience at XYZ Organization, I took a career break for UPSC preparation. Now
+                        I'm back in the private sector, eager to contribute my skills and grow professionally.
                     </p>
                     <p class="text-lg text-gray-600 mb-8">
-                        When I'm not coding, you can find me painting, watching movies, or traveling to new places. I believe in continuous learning and staying updated with the latest industry trends.
+                        When I'm not coding, you can find me painting, watching movies, or traveling to new places. I
+                        believe in continuous learning and staying updated with the latest industry trends.
                     </p>
                     <div class="flex flex-wrap gap-4">
                         <div class="flex items-center">
@@ -148,7 +171,7 @@ Currently working at MDS Digital Media on <strong>SMPP 2.0, Omnichannel messagin
     <!-- Skills Section -->
     <section id="skills" class="py-20 bg-gray-50">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-16"> 
+            <div class="text-center mb-16">
                 <h2 class="text-3xl font-bold text-gray-800 mb-4" data-aos="fade-up">My Skills</h2>
                 <div class="w-20 h-1 bg-blue-600 mx-auto mb-6" data-aos="fade-up"></div>
                 <p class="text-lg text-gray-600 max-w-2xl mx-auto" data-aos="fade-up">
@@ -161,17 +184,20 @@ Currently working at MDS Digital Media on <strong>SMPP 2.0, Omnichannel messagin
                     <h3 class="font-semibold text-lg mb-2">Java</h3>
                     <p class="text-gray-600">Backend development</p>
                 </div>
-                <div class="skill-badge bg-white p-6 rounded-lg shadow-md text-center" data-aos="zoom-in" data-aos-delay="100">
+                <div class="skill-badge bg-white p-6 rounded-lg shadow-md text-center" data-aos="zoom-in"
+                    data-aos-delay="100">
                     <i data-feather="code" class="w-10 h-10 text-blue-600 mx-auto mb-4"></i>
                     <h3 class="font-semibold text-lg mb-2">Python</h3>
                     <p class="text-gray-600">Scripting & Django</p>
                 </div>
-                <div class="skill-badge bg-white p-6 rounded-lg shadow-md text-center" data-aos="zoom-in" data-aos-delay="200">
+                <div class="skill-badge bg-white p-6 rounded-lg shadow-md text-center" data-aos="zoom-in"
+                    data-aos-delay="200">
                     <i data-feather="globe" class="w-10 h-10 text-blue-600 mx-auto mb-4"></i>
                     <h3 class="font-semibold text-lg mb-2">Angular</h3>
                     <p class="text-gray-600">Frontend framework</p>
                 </div>
-                <div class="skill-badge bg-white p-6 rounded-lg shadow-md text-center" data-aos="zoom-in" data-aos-delay="300">
+                <div class="skill-badge bg-white p-6 rounded-lg shadow-md text-center" data-aos="zoom-in"
+                    data-aos-delay="300">
                     <i data-feather="server" class="w-10 h-10 text-blue-600 mx-auto mb-4"></i>
                     <h3 class="font-semibold text-lg mb-2">Node.js</h3>
                     <p class="text-gray-600">JavaScript runtime</p>
@@ -181,22 +207,26 @@ Currently working at MDS Digital Media on <strong>SMPP 2.0, Omnichannel messagin
                     <h3 class="font-semibold text-lg mb-2">REST API</h3>
                     <p class="text-gray-600">Web services</p>
                 </div>
-                <div class="skill-badge bg-white p-6 rounded-lg shadow-md text-center" data-aos="zoom-in" data-aos-delay="100">
+                <div class="skill-badge bg-white p-6 rounded-lg shadow-md text-center" data-aos="zoom-in"
+                    data-aos-delay="100">
                     <i data-feather="git-merge" class="w-10 h-10 text-blue-600 mx-auto mb-4"></i>
                     <h3 class="font-semibold text-lg mb-2">Git</h3>
                     <p class="text-gray-600">Version control</p>
                 </div>
-                <div class="skill-badge bg-white p-6 rounded-lg shadow-md text-center" data-aos="zoom-in" data-aos-delay="200">
+                <div class="skill-badge bg-white p-6 rounded-lg shadow-md text-center" data-aos="zoom-in"
+                    data-aos-delay="200">
                     <i data-feather="bar-chart-2" class="w-10 h-10 text-blue-600 mx-auto mb-4"></i>
                     <h3 class="font-semibold text-lg mb-2">Power BI</h3>
                     <p class="text-gray-600">Data visualization</p>
                 </div>
-                <div class="skill-badge bg-white p-6 rounded-lg shadow-md text-center" data-aos="zoom-in" data-aos-delay="300">
+                <div class="skill-badge bg-white p-6 rounded-lg shadow-md text-center" data-aos="zoom-in"
+                    data-aos-delay="300">
                     <i data-feather="layout" class="w-10 h-10 text-blue-600 mx-auto mb-4"></i>
                     <h3 class="font-semibold text-lg mb-2">Web Dev</h3>
                     <p class="text-gray-600">HTML, CSS, JavaScript</p>
                 </div>
-                <div class="skill-badge bg-white p-6 rounded-lg shadow-md text-center" data-aos="zoom-in" data-aos-delay="100">
+                <div class="skill-badge bg-white p-6 rounded-lg shadow-md text-center" data-aos="zoom-in"
+                    data-aos-delay="100">
                     <i data-feather="code" class="w-10 h-10 text-blue-600 mx-auto mb-4"></i>
                     <h3 class="font-semibold text-lg mb-2">PHP</h3>
                     <p class="text-gray-600">PHP Laravel</p>
@@ -219,14 +249,22 @@ Currently working at MDS Digital Media on <strong>SMPP 2.0, Omnichannel messagin
                         <span class="text-blue-600 font-medium">11/12/2024 - Present</span>
                     </div>
                     <p class="text-gray-600 mb-4">Software Developer</p>
-                   <ul class="list-disc pl-5 text-gray-600 space-y-2">
-  <li>Developing a high-availability <strong>SMPP 2.0 communication platform</strong> using Python (Django), MySQL, and HTML/CSS-based frontend templates, focusing on performance, security, and scalability.</li>
-  <li>Designed and implemented <strong>RESTful APIs</strong> for message submission, delivery status tracking, authentication, and configuration management.</li>
-  <li>Optimized SQL queries and database schemas to support high-throughput messaging and improve system reliability.</li>
-  <li>Worked on a <strong>separate Angular and Node.js–based application</strong>, building SPA components and integrating backend APIs for real-time messaging features.</li>
-  <li>Delivered <strong>production-ready landing pages and company website modules</strong> using HTML, CSS, JavaScript, and PHP, improving page load time and cross-browser compatibility.</li>
-  <li>Collaborated with DevOps and QA teams to ensure smooth deployments, API stability, and environment consistency.</li>
-</ul>
+                    <ul class="list-disc pl-5 text-gray-600 space-y-2">
+                        <li>Developing a high-availability <strong>SMPP 2.0 communication platform</strong> using Python
+                            (Django), MySQL, and HTML/CSS-based frontend templates, focusing on performance, security,
+                            and scalability.</li>
+                        <li>Designed and implemented <strong>RESTful APIs</strong> for message submission, delivery
+                            status tracking, authentication, and configuration management.</li>
+                        <li>Optimized SQL queries and database schemas to support high-throughput messaging and improve
+                            system reliability.</li>
+                        <li>Worked on a <strong>separate Angular and Node.js–based application</strong>, building SPA
+                            components and integrating backend APIs for real-time messaging features.</li>
+                        <li>Delivered <strong>production-ready landing pages and company website modules</strong> using
+                            HTML, CSS, JavaScript, and PHP, improving page load time and cross-browser compatibility.
+                        </li>
+                        <li>Collaborated with DevOps and QA teams to ensure smooth deployments, API stability, and
+                            environment consistency.</li>
+                    </ul>
                 </div>
                 <div class="bg-gray-50 p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="100">
                     <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
@@ -235,7 +273,8 @@ Currently working at MDS Digital Media on <strong>SMPP 2.0, Omnichannel messagin
                     </div>
                     <p class="text-gray-600 mb-4">Test Engineer</p>
                     <ul class="list-disc pl-5 text-gray-600 space-y-2">
-                        <li>Monitored applications, infrastructure and network alerts using advanced monitoring tools to ensure swift incident response, minimizing downtime.</li>
+                        <li>Monitored application, infrastructure, and network alerts using enterprise monitoring tools, reducing average incident resolution time by <strong>40%</strong> and improving overall system stability.</li>
+
                         <!-- <li>Participated in code reviews and team meetings</li>
                         <li>Worked on bug fixes and performance improvements</li> -->
                     </ul>
@@ -247,9 +286,9 @@ Currently working at MDS Digital Media on <strong>SMPP 2.0, Omnichannel messagin
                     </div>
                     <p class="text-gray-600 mb-4">UPSC Preparation</p>
                     <ul class="list-disc pl-5 text-gray-600 space-y-2">
-                        <li>Dedicated time to prepare for UPSC examinations</li>
-                        <li>Developed strong analytical and problem-solving skills</li>
-                        <li>Gained knowledge in diverse subjects including history, polity, and current affairs</li>
+                        <li>Undertook structured preparation in Governance, Public Policy, and Economics, developing strong analytical reasoning and data-driven problem-solving skills.</li>
+<li>Regularly evaluated complex case studies, improving decision-making and structured thinking.</li>
+
                     </ul>
                 </div>
             </div>
@@ -274,7 +313,8 @@ Currently working at MDS Digital Media on <strong>SMPP 2.0, Omnichannel messagin
                         </div>
                         <h3 class="text-xl font-semibold">Painting</h3>
                     </div>
-                    <p class="text-gray-600">I enjoy expressing my creativity through painting. It's a great way to relax and see things from different perspectives.</p>
+                    <p class="text-gray-600">I enjoy expressing my creativity through painting. It's a great way to
+                        relax and see things from different perspectives.</p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="100">
                     <div class="flex items-center mb-4">
@@ -283,7 +323,8 @@ Currently working at MDS Digital Media on <strong>SMPP 2.0, Omnichannel messagin
                         </div>
                         <h3 class="text-xl font-semibold">Movies</h3>
                     </div>
-                    <p class="text-gray-600">I'm a movie enthusiast who appreciates good storytelling. From classics to contemporary cinema, I enjoy diverse genres.</p>
+                    <p class="text-gray-600">I'm a movie enthusiast who appreciates good storytelling. From classics to
+                        contemporary cinema, I enjoy diverse genres.</p>
                 </div>
                 <div class="bg-white p-6 rounded-lg shadow-md" data-aos="fade-up" data-aos-delay="200">
                     <div class="flex items-center mb-4">
@@ -292,7 +333,8 @@ Currently working at MDS Digital Media on <strong>SMPP 2.0, Omnichannel messagin
                         </div>
                         <h3 class="text-xl font-semibold">Traveling</h3>
                     </div>
-                    <p class="text-gray-600">Exploring new places and cultures is my passion. Traveling helps me gain new experiences and broadens my worldview.</p>
+                    <p class="text-gray-600">Exploring new places and cultures is my passion. Traveling helps me gain
+                        new experiences and broadens my worldview.</p>
                 </div>
             </div>
         </div>
@@ -313,17 +355,22 @@ Currently working at MDS Digital Media on <strong>SMPP 2.0, Omnichannel messagin
                     <form class="space-y-6">
                         <div>
                             <label for="name" class="block text-gray-700 mb-2">Name</label>
-                            <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                            <input type="text" id="name"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
                         </div>
                         <div>
                             <label for="email" class="block text-gray-700 mb-2">Email</label>
-                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                            <input type="email" id="email"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
                         </div>
                         <div>
                             <label for="message" class="block text-gray-700 mb-2">Message</label>
-                            <textarea id="message" rows="5" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"></textarea>
+                            <textarea id="message" rows="5"
+                                class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"></textarea>
                         </div>
-                        <button type="submit" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 shadow-md w-full">Send Message</button>
+                        <button type="submit"
+                            class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300 shadow-md w-full">Send
+                            Message</button>
                     </form>
                 </div>
                 <div class="md:w-1/2" data-aos="fade-left">
@@ -346,7 +393,7 @@ Currently working at MDS Digital Media on <strong>SMPP 2.0, Omnichannel messagin
                                 <div>
                                     <h4 class="font-medium text-gray-700">Phone</h4>
                                     <p class="text-gray-600">+91 9594877078</p>
-                                 </div>
+                                </div>
                             </div>
                             <div class="flex items-start">
                                 <div class="bg-blue-100 p-3 rounded-full mr-4">
@@ -361,16 +408,20 @@ Currently working at MDS Digital Media on <strong>SMPP 2.0, Omnichannel messagin
                         <div class="mt-8">
                             <h4 class="font-medium text-gray-700 mb-4">Connect with me</h4>
                             <div class="flex space-x-4">
-                                <a href="#" class="bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-200 transition duration-300">
+                                <a href="#"
+                                    class="bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-200 transition duration-300">
                                     <i data-feather="linkedin"></i>
                                 </a>
-                                <a href="#" class="bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-200 transition duration-300">
+                                <a href="#"
+                                    class="bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-200 transition duration-300">
                                     <i data-feather="github"></i>
                                 </a>
-                                <a href="#" class="bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-200 transition duration-300">
+                                <a href="#"
+                                    class="bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-200 transition duration-300">
                                     <i data-feather="twitter"></i>
                                 </a>
-                                <a href="#" class="bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-200 transition duration-300">
+                                <a href="#"
+                                    class="bg-blue-100 p-3 rounded-full text-blue-600 hover:bg-blue-200 transition duration-300">
                                     <i data-feather="instagram"></i>
                                 </a>
                             </div>
@@ -422,14 +473,14 @@ Currently working at MDS Digital Media on <strong>SMPP 2.0, Omnichannel messagin
         });
 
         // Mobile menu toggle
-        document.getElementById('menu-btn').addEventListener('click', function() {
+        document.getElementById('menu-btn').addEventListener('click', function () {
             const menu = document.getElementById('mobile-menu');
             menu.classList.toggle('hidden');
         });
 
         // Close mobile menu when clicking a link
         document.querySelectorAll('#mobile-menu a').forEach(link => {
-            link.addEventListener('click', function() {
+            link.addEventListener('click', function () {
                 document.getElementById('mobile-menu').classList.add('hidden');
             });
         });
@@ -448,4 +499,5 @@ Currently working at MDS Digital Media on <strong>SMPP 2.0, Omnichannel messagin
         feather.replace();
     </script>
 </body>
+
 </html>
